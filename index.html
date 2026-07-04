@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Jason Ntuuwa</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals course landing page, featuring web development learning activities and projects.">
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Jason Ntuuwa</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/jason-ntuuwa-148856207/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/29?lang=eng&id=p11#p11" target="_blank">Scripture</a>
+            <a href="final-project/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Jason Ntuuwa</h1>
+    
+        <div class="card-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpeg" alt="Photo of Joel Ntuuwa" width="200" height="200">
+                <p>
+                    My name is Joel Ntuuwa, and I was born in Uganda. I am currently studying at BYU-Pathway Worldwide,
+                    where I am building
+                    skills in web development, Python programming, and business communication. I enjoy learning new
+                    technologies, creating
+                    music in FL Studio, and watching soccer. In my free time, I like studying personal development and
+                    finding ways to
+                    improve my communication and writing skills. I look forward to continuing to grow both personally and
+                    professionally as
+                    I work toward a career in software development.
+                </p>
+
+                <h3>Kampala, Uganda</h3>
+                <hr>
+                <div class="location">
+                    <img src="images/uganda-flag.svg" alt="Official flag of Uganda">
+                    <p>
+                        Uganda is a landlocked country in East Africa, often called the
+                        "Pearl of Africa" for its lush landscapes and biodiversity. It is
+                        home to part of Lake Victoria, the source of the Nile River, and
+                        a wide variety of wildlife, including mountain gorillas found in
+                        its national parks.
+                    </p>
+                </div>
+                
+            </section>
+    
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <img src="images/webdev.jpg" alt="Code editor displaying HTML and JavaScript syntax" width="250" height="180">
+                <ul>
+                    <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Jason Ntuuwa, Hopkins, MN
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
