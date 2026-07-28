@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazyloading Images</title>
+    <meta name="description" content="Week 04 Learning Activity: Lazyloading Images for WDD 131">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h2>WDD 131 &middot; Dynamic Web Fundamentals</h2>
+    </header>
+
+    <main>
+        <h1>Lazyloading Images</h1>
+        <p class="intro">W04 Learning Activity</p>
+
+        <img src="https://picsum.photos/id/1036/400/650" alt="A dark mountain range silhouetted at dusk" width="400"
+            height="650" loading="lazy">
+        <img src="https://picsum.photos/id/1039/400/650" alt="A misty forest with tall dark trees" width="400"
+            height="650" loading="lazy">
+        <img src="https://picsum.photos/id/28/400/650" alt="A dramatic close-up view of jagged mountain terrain"
+            width="400" height="650" loading="lazy">
+        <img src="https://picsum.photos/id/110/400/650" alt="A dark stormy sky over an open field" width="400"
+            height="650" loading="lazy">
+        <img src="https://picsum.photos/id/152/400/650" alt="A moody shot of layered fog over hills" width="400"
+            height="650" loading="lazy">
+        <img src="https://picsum.photos/id/177/400/650" alt="A dark textured close-up of tree bark" width="400"
+            height="650" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
