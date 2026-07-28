@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temples | Filtered Temples</title>
+    <meta name="description" content="A responsive gallery of temples that can be filtered by age and size." />
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temples</h1>
+        <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <ul id="navList">
+                <li><a href="#" data-filter="home" class="active">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="galleryHeading">Home</h2>
+        <div class="temple-gallery" id="templeGallery">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Temples Gallery | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
