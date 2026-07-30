@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #F8F9FA;
+    color: #1C1E21;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1C1E21;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 2px solid #005A9C;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin: 0 0 1rem 1.5rem;
+}
+
+code {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* Header */
+.plan-header {
+    background-color: #1C1E21;
+    color: #F8F9FA;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.plan-header h1 {
+    color: #F8F9FA;
+}
+
+.eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    color: #005A9C;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #C4C7CC;
+    max-width: 600px;
+    margin: 0.5rem auto 0 auto;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 5% 4rem 5%;
+}
+
+section {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.site-name-display {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #005A9C;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.domain-note {
+    font-size: 0.9rem;
+    color: #4B4F55;
+}
+
+/* Scenarios */
+.scenario {
+    background-color: #F8F9FA;
+    border-left: 4px solid #005A9C;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.scenario:last-child {
+    margin-bottom: 0;
+}
+
+.scenario-drives {
+    font-style: italic;
+    color: #4B4F55;
+    margin-bottom: 0;
+}
+
+/* Color schema */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-box {
+    height: 90px;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.hex {
+    font-family: 'Inter', monospace;
+    font-weight: 600;
+    color: #005A9C;
+    font-size: 0.9rem;
+}
+
+/* Typography */
+.type-sample {
+    margin-bottom: 1.5rem;
+}
+
+.type-sample:last-child {
+    margin-bottom: 0;
+}
+
+.type-label {
+    color: #005A9C;
+}
+
+.type-preview {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #F8F9FA;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.montserrat-preview {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.inter-preview {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+/* Wireframes */
+.wireframe-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.wireframe {
+    background-color: #F8F9FA;
+    border: 1px dashed #C4C7CC;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.desktop-wireframe {
+    flex: 2;
+    min-width: 340px;
+}
+
+.mobile-wireframe {
+    flex: 1;
+    min-width: 160px;
+    max-width: 220px;
+}
+
+.wf-box {
+    background-color: #FFFFFF;
+    border: 1px solid #C4C7CC;
+    border-radius: 3px;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #4B4F55;
+}
+
+.wf-header {
+    background-color: #1C1E21;
+    color: #F8F9FA;
+}
+
+.wf-hero {
+    background-color: #E9F1F7;
+    border-color: #005A9C;
+}
+
+.wf-cta {
+    background-color: #005A9C;
+    color: #FFFFFF;
+}
+
+.wf-footer {
+    background-color: #1C1E21;
+    color: #F8F9FA;
+}
+
+.wf-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wf-col,
+.wf-col-wide {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.plan-footer {
+    text-align: center;
+    padding: 1.5rem 5%;
+    background-color: #1C1E21;
+    color: #C4C7CC;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframe-group {
+        flex-direction: column;
+    }
+
+    .desktop-wireframe,
+    .mobile-wireframe {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}

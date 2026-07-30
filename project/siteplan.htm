@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Aethelon</title>
+    <meta name="description" content="Website planning document for Aethelon, a premium men's clothing brand.">
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+
+    <header class="plan-header">
+        <p class="eyebrow">WDD 131 &mdash; Week 05 Project</p>
+        <h1>Aethelon Website Plan</h1>
+        <p class="subtitle">Planning document for a premium, versatile men's clothing brand site.</p>
+    </header>
+
+    <main>
+
+        <section id="site-name" aria-labelledby="site-name-heading">
+            <h2 id="site-name-heading">Site Name</h2>
+            <p class="site-name-display">Aethelon</p>
+            <p>The name Aethelon fuses two ideas: <em>Aethel</em>, an Old English root meaning noble, and the athletic
+                energy of a decathlon. It signals a brand built on classical, noble aesthetics paired with modern
+                athletic performance &mdash; the same fusion the clothing line itself is built around.</p>
+            <p class="domain-note">Proposed domain: <code>aethelon.com</code></p>
+        </section>
+
+        <section id="site-purpose" aria-labelledby="site-purpose-heading">
+            <h2 id="site-purpose-heading">Site Purpose</h2>
+            <p>The Aethelon website establishes a premium digital storefront and lifestyle hub for the modern man. It
+                provides high-quality, versatile menswear alongside curated style guides, technical fabric education,
+                and an exclusive community membership program.</p>
+            <p>Key components required:</p>
+            <ul>
+                <li>E-commerce storefront with dynamic product grids</li>
+                <li>Technical sizing and fit calculator</li>
+                <li>Fabric performance and education content</li>
+                <li>Interactive loyalty club sign-up portal</li>
+            </ul>
+        </section>
+
+        <section id="scenarios" aria-labelledby="scenarios-heading">
+            <h2 id="scenarios-heading">Scenarios</h2>
+
+            <article class="scenario">
+                <h3>Scenario 1: Product Selection &amp; Fit</h3>
+                <p>"I am looking for a versatile jacket that transitions seamlessly from morning gym sessions to casual
+                    office meetings. Which fabrics in your collection offer the best blend of breathability and
+                    structure, and how do I ensure a tailored fit?"</p>
+                <p class="scenario-drives">Drives the need for an interactive fabric education section and a
+                    comprehensive sizing calculator.</p>
+            </article>
+
+            <article class="scenario">
+                <h3>Scenario 2: Community &amp; Operations</h3>
+                <p>"How can I join the Aethelon member club to get early access to limited seasonal clothing drops, and
+                    what is your return policy if the sizing isn't quite right?"</p>
+                <p class="scenario-drives">Drives the need for a prominent homepage loyalty registration form and highly
+                    visible footer links to FAQs and returns.</p>
+            </article>
+        </section>
+
+        <section id="color-schema" aria-labelledby="color-schema-heading">
+            <h2 id="color-schema-heading">Color Schema</h2>
+            <p>Colors follow the 60&ndash;30&ndash;10 rule for a balanced, premium retail feel.</p>
+
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-box" style="background-color:#F8F9FA; border:1px solid #E5E7EB;"></div>
+                    <h3>Pentelic Marble</h3>
+                    <p class="hex">#F8F9FA &mdash; 60%</p>
+                    <p>Dominant page background. A pristine, ultra-light cool gray that gives the storefront an open,
+                        luxury-retail atmosphere.</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-box" style="background-color:#1C1E21;"></div>
+                    <h3>Olympic Charcoal</h3>
+                    <p class="hex">#1C1E21 &mdash; 30%</p>
+                    <p>Structural focus. Used for headings, primary body text, and the navigation and footer blocks.</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-box" style="background-color:#005A9C;"></div>
+                    <h3>Aegean Blue</h3>
+                    <p class="hex">#005A9C &mdash; 10%</p>
+                    <p>High-conversion accent, reserved for call-to-action buttons, active form fields, links, and hover
+                        states.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" aria-labelledby="typography-heading">
+            <h2 id="typography-heading">Typography</h2>
+
+            <div class="type-sample">
+                <h3 class="type-label">Montserrat &mdash; Display &amp; Headings</h3>
+                <p class="type-preview montserrat-preview">Aa Bb Cc &mdash; SHOP THE COLLECTION</p>
+                <p>Used for major headers (h1, h2), all-caps navigation labels, and buttons. Conveys structured,
+                    athletic prestige.</p>
+            </div>
+
+            <div class="type-sample">
+                <h3 class="type-label">Inter &mdash; Body &amp; Interface</h3>
+                <p class="type-preview inter-preview">Aa Bb Cc &mdash; Premium, versatile menswear built for every part
+                    of your day.</p>
+                <p>High-readability interface font used for descriptive body text, form fields, text inputs, and data
+                    tables.</p>
+            </div>
+        </section>
+
+        <section id="wireframes" aria-labelledby="wireframes-heading">
+            <h2 id="wireframes-heading">Wireframes</h2>
+            <p>Simplified layout representations of the homepage in desktop and mobile views.</p>
+
+            <div class="wireframe-group">
+                <div class="wireframe desktop-wireframe">
+                    <h3>Desktop View</h3>
+                    <div class="wf-box wf-header">Header: Logo &nbsp;|&nbsp; Nav Links &nbsp;|&nbsp; Cart</div>
+                    <div class="wf-box wf-hero">Hero: Headline + CTA Button</div>
+                    <div class="wf-row">
+                        <div class="wf-box wf-col">Activewear</div>
+                        <div class="wf-box wf-col">Casual Essentials</div>
+                        <div class="wf-box wf-col">Tailored Jackets</div>
+                    </div>
+                    <div class="wf-row">
+                        <div class="wf-box wf-col-wide">Fabric Education</div>
+                        <div class="wf-box wf-col-wide">Recent Arrival</div>
+                    </div>
+                    <div class="wf-box wf-cta">Community Portal: Email Sign-up + CTA</div>
+                    <div class="wf-box wf-footer">Footer: Copyright | FAQs | Returns | Contact</div>
+                </div>
+
+                <div class="wireframe mobile-wireframe">
+                    <h3>Mobile View</h3>
+                    <div class="wf-box wf-header">Logo &nbsp;|&nbsp; [ = ]</div>
+                    <div class="wf-box wf-hero">Hero: Headline + CTA</div>
+                    <div class="wf-box wf-col">Activewear</div>
+                    <div class="wf-box wf-col">Casual Essentials</div>
+                    <div class="wf-box wf-col">Tailored Jackets</div>
+                    <div class="wf-box wf-col-wide">Fabric Education</div>
+                    <div class="wf-box wf-col-wide">Recent Arrival</div>
+                    <div class="wf-box wf-cta">Community Sign-up</div>
+                    <div class="wf-box wf-footer">Footer Links</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="plan-footer">
+        <p>&copy; 2026 Aethelon Site Plan | WDD 131 Week 05 Project</p>
+    </footer>
+
+</body>
+
+</html>
