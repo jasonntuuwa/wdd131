@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Club | Aethelon</title>
+    <meta name="description"
+        content="Join the Aethelon member club for early access to seasonal drops and member-only pricing.">
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Aethelon</a>
+        <ul class="nav-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="fabric.html">Our Fabric</a></li>
+            <li><a href="join.html">Join the Club</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </nav>
+
+    
+    <main>
+        <section class="hero">
+            <h1>Join the Club</h1>
+            <p>Get early access to limited seasonal drops, member-only pricing, and first word on new fabric releases.
+            </p>
+        </section>
+
+        <section class="section-container">
+            <form class="join-form" action="thanks.html" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-row">
+                        <label for="full-name">Full Name</label>
+                        <input class="form-input" type="text" id="full-name" name="fullName" placeholder="Jason Ntuuwa"
+                            required minlength="2" maxlength="60">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-input" type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="birthdate">Date of Birth</label>
+                        <input class="form-input" type="date" id="birthdate" name="birthdate">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sizing Preference</legend>
+
+                    <div class="form-row">
+                        <label for="jacket-size">Preferred Jacket Size</label>
+                        <select class="form-input" id="jacket-size" name="jacketSize" required>
+                            <option value="">Select a size</option>
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">X-Large</option>
+                            <option value="xxl">XX-Large</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="fit-comfort">Fit Comfort Level: <output id="fit-output">5</output></label>
+                        <input type="range" id="fit-comfort" name="fitComfort" min="1" max="10" value="5">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Tier</legend>
+                    <p class="field-hint">Choose one option.</p>
+
+                    <div class="form-row radio-row">
+                        <input type="radio" id="tier-standard" name="membershipTier" value="standard" checked>
+                        <label for="tier-standard">Standard &mdash; Free</label>
+                    </div>
+
+                    <div class="form-row radio-row">
+                        <input type="radio" id="tier-premium" name="membershipTier" value="premium">
+                        <label for="tier-premium">Premium &mdash; Early access to drops</label>
+                    </div>
+
+                    <div class="form-row radio-row">
+                        <input type="radio" id="tier-founders" name="membershipTier" value="founders">
+                        <label for="tier-founders">Founder's Circle &mdash; Invite only</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+                    <p class="field-hint">Select all that apply.</p>
+
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="interest-activewear" name="interests" value="activewear">
+                        <label for="interest-activewear">Activewear</label>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="interest-casual" name="interests" value="casual">
+                        <label for="interest-casual">Casual Essentials</label>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="interest-tailored" name="interests" value="tailored">
+                        <label for="interest-tailored">Tailored Jackets</label>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="interest-updates" name="interests" value="updates">
+                        <label for="interest-updates">Fabric &amp; Technology Updates</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Notes</legend>
+
+                    <div class="form-row">
+                        <label for="notes">Anything else we should know?</label>
+                        <textarea class="form-input" id="notes" name="notes" rows="4" placeholder="Optional comments..."
+                            maxlength="300"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Join the Club</button>
+                    <button type="reset" class="btn-secondary">Clear Form</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+        <p>&copy; 2026 Aethelon. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
