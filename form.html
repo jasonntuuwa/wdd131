@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="Submit a product review including rating, installation date, and useful features.">
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+        <p>Tell us what you think about your recent purchase.</p>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <p class="required-note"><span class="required-mark" aria-hidden="true">*</span> indicates a required field
+            </p>
+
+            <div class="form-row">
+                <label for="product">Product Name<span class="required-mark" aria-hidden="true">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label id="rating-label">Overall Rating<span class="required-mark" aria-hidden="true">*</span></label>
+                <div class="star-rating" role="radiogroup" aria-labelledby="rating-label">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" aria-label="5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4" aria-label="4 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3" aria-label="3 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2" aria-label="2 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1" aria-label="1 star"></label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="install-date">Date of Installation<span class="required-mark"
+                        aria-hidden="true">*</span></label>
+                <input type="date" id="install-date" name="installDate" required>
+            </div>
+
+            <div class="form-row">
+                <label id="features-label">Useful Features</label>
+                <p class="field-hint">Check all that apply.</p>
+                <div class="checkbox-group" role="group" aria-labelledby="features-label">
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="feature-easy" name="features" value="easy-to-install">
+                        <label for="feature-easy">Easy to install</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="feature-durable" name="features" value="durable">
+                        <label for="feature-durable">Durable</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="feature-value" name="features" value="great-value">
+                        <label for="feature-value">Great value</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="feature-advertised" name="features" value="works-as-advertised">
+                        <label for="feature-advertised">Works as advertised</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="feature-portable" name="features" value="portable">
+                        <label for="feature-portable">Portable</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="review-text">Written Review</label>
+                <textarea id="review-text" name="reviewText" placeholder="Optional comments..."></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="username">Your Name</label>
+                <input type="text" id="username" name="username" placeholder="Optional">
+            </div>
+
+            <div class="form-row">
+                <input type="submit" value="Submit Review">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jason Ntuuwa | WDD 131</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

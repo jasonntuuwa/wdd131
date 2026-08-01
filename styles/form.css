@@ -1,0 +1,246 @@
+:root {
+    --color-bg: #F4F6F8;
+    --color-surface: #FFFFFF;
+    --color-text: #202631;
+    --color-text-muted: #5B6472;
+    --color-primary: #2F6690;
+    --color-primary-dark: #1F4C6E;
+    --color-border: #D8DEE4;
+    --color-required: #C0392B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-primary-dark);
+    color: var(--color-surface);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    letter-spacing: -0.01em;
+}
+
+header p {
+    color: #C9D6E0;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 5% 4rem 5%;
+}
+
+form {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.form-row {
+    margin-bottom: 1.5rem;
+}
+
+.form-row:last-of-type {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-text);
+}
+
+.field-hint {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.required-note {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.required-mark {
+    color: var(--color-required);
+    margin-left: 0.15rem;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(47, 102, 144, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.star-rating input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    margin-bottom: 0;
+    line-height: 1;
+    transition: color 0.15s ease;
+}
+
+.star-rating label::before {
+    content: "\2606";
+}
+
+.star-rating input[type="radio"]:checked~label::before,
+.star-rating label:hover::before,
+.star-rating label:hover~label::before {
+    content: "\2605";
+}
+
+.star-rating input[type="radio"]:checked~label,
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: var(--color-primary);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.checkbox-row label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-primary);
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+input[type="submit"] {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: 0.85rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.confirmation {
+    text-align: center;
+    padding: 4rem 5%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.confirmation h2 {
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.review-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 1.5rem 0;
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.confirmation a:hover {
+    color: var(--color-primary-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 5%;
+    background-color: var(--color-primary-dark);
+    color: #C9D6E0;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 1.5rem 5% 3rem 5%;
+    }
+
+    form {
+        padding: 1.25rem;
+    }
+
+    .star-rating label {
+        font-size: 1.75rem;
+    }
+}
