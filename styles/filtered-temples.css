@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +6,7 @@
 
 :root {
     --primary-color: #2c3e50;
-    --accent-color: #7c5cff;
+    --accent-color: #6c4ce0;
     --light-bg: #f4f4f4;
     --text-color: #222222;
     --card-bg: #ffffff;
@@ -24,7 +23,6 @@ body {
     background-color: var(--light-bg);
     line-height: 1.5;
 }
-
 
 header {
     display: flex;
@@ -99,7 +97,6 @@ nav a.active {
     background-color: var(--accent-color);
 }
 
-
 main {
     padding: 1.5rem;
     max-width: 1200px;
@@ -168,7 +165,6 @@ main {
     box-shadow: 0 3px 8px var(--img-shadow);
 }
 
-
 footer {
     text-align: center;
     padding: 1.25rem;
@@ -176,7 +172,6 @@ footer {
     color: var(--on-dark-text);
     margin-top: 2rem;
 }
-
 
 @media (max-width: 700px) {
     #menu {
