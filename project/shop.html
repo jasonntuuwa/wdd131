@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You're In | Aethelon</title>
-    <meta name="description" content="Confirmation page for new Aethelon club members.">
+    <title>Shop | Aethelon</title>
+    <meta name="description"
+        content="Browse Aethelon's collection of activewear, casual essentials, and tailored jackets.">
     <meta name="author" content="Jason Ntuuwa">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,6 @@
 
 <body>
 
-   
     <nav class="navbar">
         <a href="index.html" class="nav-logo">Aethelon</a>
         <ul class="nav-links">
@@ -28,17 +28,29 @@
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </nav>
 
-   
     <main>
-        <section class="confirmation">
-            <h1>Welcome to the Club</h1>
-            <p>Thanks for joining Aethelon. Keep an eye on your inbox &mdash; early access to our next seasonal drop is
-                on its way.</p>
-            <a href="index.html" class="btn-primary">Back to Home</a>
+        <section class="hero">
+            <img src="images/hero-illustration.svg"
+                alt="Aethelon brand illustration: a classical column fused with dynamic motion lines" width="400"
+                height="280" class="hero-image">
+            <h1>Shop the Collection</h1>
+            <p>Performance-tested fabric, built for the transition between training and everyday life.</p>
+        </section>
+
+        <section class="section-container" aria-labelledby="shop-heading">
+            <h2 id="shop-heading">All Products</h2>
+
+            <div class="filter-bar" role="group" aria-label="Filter products by category">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="activewear">Activewear</button>
+                <button class="filter-btn" data-category="casual">Casual Essentials</button>
+                <button class="filter-btn" data-category="tailored">Tailored Jackets</button>
+            </div>
+
+            <div class="grid-layout" id="product-grid"></div>
         </section>
     </main>
 
-    
     <footer class="site-footer">
         <ul class="footer-links">
             <li><a href="faq.html">FAQs</a></li>
@@ -51,6 +63,7 @@
     </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/shop.js"></script>
 </body>
 
 </html>

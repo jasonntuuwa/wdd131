@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fabric | Aethelon</title>
+    <meta name="description"
+        content="Learn about Aethelon's performance fabrics and find your recommended size with our fit calculator.">
+    <meta name="author" content="Jason Ntuuwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Aethelon</a>
+        <ul class="nav-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="fabric.html">Our Fabric</a></li>
+            <li><a href="join.html">Join the Club</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Our Fabric</h1>
+            <p>Every Aethelon piece starts with the material. Here's what goes into each blend, and how to find your
+                fit.</p>
+        </section>
+
+        <section class="section-container" aria-labelledby="fabric-heading">
+            <h2 id="fabric-heading">Built From the Blend Up</h2>
+            <div class="grid-layout">
+                <article class="content-card">
+                    <h3>AeroFlex Performance Blend</h3>
+                    <p>A four-way stretch, moisture-wicking knit with mesh ventilation panels at the back and underarms.
+                        Used across our Activewear line, it's engineered to move with you through a full training
+                        session without holding onto sweat.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Structured Twill</h3>
+                    <p>A tightly woven, water-resistant twill that holds its shape and resists wrinkling, while still
+                        flexing at the shoulders and elbows. This is the fabric behind our Tailored Jackets, built to
+                        move straight from a morning session into a meeting.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Pima Cotton Blend</h3>
+                    <p>A long-staple cotton blend, softer and more durable than standard cotton, used throughout our
+                        Casual Essentials. It holds its shape wash after wash without losing the breathability that
+                        makes it comfortable all day.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-container" aria-labelledby="fit-heading">
+            <h2 id="fit-heading">Find Your Fit</h2>
+            <p>Measure around the fullest part of your chest, in inches, and we'll recommend a starting size.</p>
+
+            <div class="fit-calculator">
+                <div class="form-row">
+                    <label for="chest-measurement">Chest Measurement (inches)</label>
+                    <input class="form-input" type="number" id="chest-measurement" min="28" max="60"
+                        placeholder="e.g. 40">
+                </div>
+                <button type="button" class="btn-primary" id="calculate-size">Find My Size</button>
+                <p class="fit-result" id="fit-result" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+        <p>&copy; 2026 Aethelon. All rights reserved.</p>
+        <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/fabric.js"></script>
+</body>
+
+</html>
