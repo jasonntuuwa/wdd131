@@ -123,17 +123,10 @@ a:hover {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.product-photo {
-    object-fit: cover;
-}
-
-.category-photo {
     object-fit: contain;
     background-color: var(--color-marble);
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
 .hero {
